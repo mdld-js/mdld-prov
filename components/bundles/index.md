@@ -17,3 +17,28 @@ A bundle's identifier id identifies a unique set of descriptions.
 A bundle is a named set of descriptions, but it is also an [entity] {+prov:Entity ?subClassOf} so that its provenance can be described.
 
 A prov:Bundle is a named set of provenance descriptions, which may itself have provenance. The named set of provenance descriptions may be expressed as PROV-O or any other form. The subclass of Bundle that names a set of PROV-O assertions is not provided by PROV-O, since it is more appropriate to do so using other recommendations, standards, or technologies. In any case, a Bundle of PROV-O assertions is an abstract set of RDF triples, and adding or removing a triple creates a new distinct Bundle of PROV-O assertions.
+
+## Summary
+
+The PROV-O Bundles component enables "provenance of provenance" by treating collections of provenance descriptions as entities themselves. This allows recursive provenance tracking where provenance records can have their own provenance.
+
+**Core Concept:**
+- **Bundle as Entity**: Named sets of provenance descriptions that are themselves entities, enabling provenance of provenance
+
+**Key Characteristics:**
+- **Recursive Provenance**: Bundles can have their own attribution, derivation, and other provenance relationships
+- **Unique Identification**: Each bundle identifier represents a unique set of descriptions
+- **Format Agnostic**: Can contain PROV-O assertions or other provenance description formats
+- **Immutability**: Adding/removing descriptions creates a new distinct bundle
+
+**Use Cases:**
+- Provenance record versioning and lineage
+- Multi-layer provenance documentation
+- Provenance aggregation from multiple sources
+- Auditing provenance collection processes
+
+**Benefits:**
+- Complete provenance traceability
+- Support for provenance metadata
+- Hierarchical provenance organization
+- Provenance collection provenance

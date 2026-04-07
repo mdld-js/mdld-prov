@@ -22,3 +22,28 @@ Connects two [entities] {+prov:Entity ?range ?domain} where one is a more specif
 Sub-property: [alternateOf] {+prov:alternateOf ?subPropertyOf ?seeAlso}
 
 Inverse: [generalizationOf] {prov:inverse}
+
+## Summary
+
+The PROV-O Alternate component provides mechanisms for expressing relationships between entities that represent the same thing in different ways. It enables precise modeling of how entities relate through alternation and specialization.
+
+**Core Relations:**
+- **alternateOf**: Symmetric relation between entities describing the same thing from different perspectives
+- **specializationOf**: Asymmetric relation where one entity is a more specific version of another
+
+**Key Characteristics:**
+- **Multiple Perspectives**: `alternateOf` handles different representations, formats, or viewpoints of the same underlying thing
+- **Hierarchical Refinement**: `specializationOf` models entity refinement with additional specific aspects
+- **Temporal Containment**: Specializations exist within the lifetime of their generalizations
+
+**Use Cases:**
+- Document format conversions (PDF, Word, HTML versions)
+- Dataset representations (raw, processed, summarized)
+- Software versions and variants
+- Context-specific entity views
+
+**Benefits:**
+- Clear provenance for entity relationships
+- Support for format and abstraction tracking
+- Hierarchical entity organization
+- Temporal relationship modeling

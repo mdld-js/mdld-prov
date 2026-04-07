@@ -21,3 +21,24 @@ Has a subclass - **Empty Collection** {=prov:EmptyCollection .Class label !subCl
 Connects a [Collection] {+prov:Collection ?domain ?prov:sharesDefinitionWith} to its [member] {+prov:Entity ?range} with a relation that is a sub-property of [wasInfluencedBy] {+prov:wasInfluencedBy ?subPropertyOf}.
 
 Inverse: [wasMemberOf] {prov:inverse}
+
+## Summary
+
+The PROV-O Collections component enables provenance tracking for collections as first-class entities. Collections inherit all entity provenance capabilities (attribution, derivation, etc.) while adding membership relationships through `hadMember`.
+
+**Core Features:**
+- **Entity Collections**: Collections are entities with their own provenance
+- **Membership Relations**: `hadMember` links collections to constituent entities
+- **Evolution Modeling**: Supports dynamic membership changes and collection derivation
+
+**Use Cases:**
+- Dataset versioning and lineage
+- Document repository management
+- Research data aggregation
+- Software dependency tracking
+
+**Benefits:**
+- Complete provenance for both items and their groupings
+- Standardized collection vocabulary
+- Audit trails for composition and maintenance
+- Support for empty collections and dynamic membership
