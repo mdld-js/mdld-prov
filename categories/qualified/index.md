@@ -8,60 +8,6 @@ The Qualification Pattern restates an unqualified influence relation by using an
 
 ![figure 4](./qualified-patterns.svg)
 
-## Classes
-
-- ActivityInfluence {+prov:ActivityInfluence  !prov:category}
-- AgentInfluence {+prov:AgentInfluence !prov:category}
-- Association {+prov:Association !prov:category}
-- Attribution {+prov:Attribution !prov:category}
-- Communication {+prov:Communication !prov:category}
-- Delegation {+prov:Delegation !prov:category}
-- Derivation {+prov:Derivation !prov:category}
-- End {+prov:End !prov:category}
-- EntityInfluence {+prov:EntityInfluence !prov:category}
-- Generation {+prov:Generation !prov:category}
-- Influence {+prov:Influence !prov:category}
-- InstantaneousEvent {+prov:InstantaneousEvent !prov:category}
-- Invalidation {+prov:Invalidation !prov:category}
-- Plan {+prov:Plan !prov:category}
-- PrimarySource {+prov:PrimarySource !prov:category}
-- Quotation {+prov:Quotation !prov:category}
-- Revision {+prov:Revision !prov:category}
-- Role {+prov:Role !prov:category}
-- Start {+prov:Start !prov:category}
-- Usage {+prov:Usage !prov:category}
-
-## Properties 
-
-- activity {+prov:activity !prov:category}
-- agent {+prov:agent !prov:category}
-- atTime {+prov:atTime !prov:category}
-- entity {+prov:entity !prov:category}
-- hadActivity {+prov:hadActivity !prov:category}
-- hadGeneration {+prov:hadGeneration !prov:category}
-- hadPlan {+prov:hadPlan !prov:category}
-- hadRole {+prov:hadRole !prov:category}
-- hadUsage {+prov:hadUsage !prov:category}
-- influencer {+prov:influencer !prov:category}
-- qualifiedAssociation {+prov:qualifiedAssociation !prov:category}
-- qualifiedAttribution {+prov:qualifiedAttribution !prov:category}
-- qualifiedCommunication {+prov:qualifiedCommunication !prov:category}
-- qualifiedDelegation {+prov:qualifiedDelegation !prov:category}
-- qualifiedDerivation {+prov:qualifiedDerivation !prov:category}
-- qualifiedEnd {+prov:qualifiedEnd !prov:category}
-- qualifiedGeneration {+prov:qualifiedGeneration !prov:category}
-- qualifiedInfluence {+prov:qualifiedInfluence !prov:category}
-- qualifiedInvalidation {+prov:qualifiedInvalidation !prov:category}
-- qualifiedPrimarySource {+prov:qualifiedPrimarySource !prov:category}
-- qualifiedQuotation {+prov:qualifiedQuotation !prov:category}
-- qualifiedRevision {+prov:qualifiedRevision !prov:category}
-- qualifiedStart {+prov:qualifiedStart !prov:category}
-- qualifiedUsage {+prov:qualifiedUsage !prov:category}
-- wasInfluencedBy {+prov:wasInfluencedBy !prov:category}
-
-
-----
-
 
 ## Starting Point Qualification Patterns
 
