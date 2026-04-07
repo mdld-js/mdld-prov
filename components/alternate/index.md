@@ -4,6 +4,6 @@
 
 ![](./component5.png)
 
-includes: {!prov:component}
-- alternateOf {=prov:alternateOf}
-- specializationOf {=prov:specializationOf}
+includes:
+- alternateOf {+prov:alternateOf !prov:component}
+- specializationOf {+prov:specializationOf !prov:component}

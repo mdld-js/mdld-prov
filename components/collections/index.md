@@ -6,8 +6,8 @@ The sixth component of PROV-DM is concerned with the notion of collections. A co
 
 ![](./component6.png)
 
-includes: {!prov:component}
+includes:
 
-- Collection {=prov:Collection}
-- EmptyCollection {=prov:EmptyCollection}
-- hadMember {=prov:hadMember}
+- Collection {+prov:Collection !prov:component}
+- EmptyCollection {+prov:EmptyCollection !prov:component}
+- hadMember {+prov:hadMember !prov:component}

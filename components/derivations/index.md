@@ -6,25 +6,25 @@ The second component of PROV-DM is concerned with: derivations of entities from 
 
 ![](./component2.png)
 
-5 classes:  {!prov:component}
+5 classes: 
 
--   Derivation {=prov:Derivation}
--   Influence {=prov:Influence}
--   PrimarySource {=prov:PrimarySource}
--   Quotation {=prov:Quotation}
--   Revision {=prov:Revision}
+-   Derivation {+prov:Derivation !prov:component}
+-   Influence {+prov:Influence !prov:component}
+-   PrimarySource {+prov:PrimarySource !prov:component}
+-   Quotation {+prov:Quotation !prov:component}
+-   Revision {+prov:Revision !prov:component}
 
-11 properties:  {!prov:component}
+11 properties:  
 
--   hadActivity {=prov:hadActivity}
--   hadGeneration {=prov:hadGeneration}
--   hadPrimarySource {=prov:hadPrimarySource}
--   hadUsage {=prov:hadUsage}
--   qualifiedDerivation {=prov:qualifiedDerivation}
--   qualifiedInfluence {=prov:qualifiedInfluence}
--   qualifiedPrimarySource {=prov:qualifiedPrimarySource}
--   qualifiedQuotation {=prov:qualifiedQuotation}
--   qualifiedRevision {=prov:qualifiedRevision}
--   wasDerivedFrom {=prov:wasDerivedFrom}
--   wasQuotedFrom {=prov:wasQuotedFrom}
--   wasRevisionOf {=prov:wasRevisionOf}
+-   hadActivity {+prov:hadActivity !prov:component}
+-   hadGeneration {+prov:hadGeneration !prov:component}
+-   hadPrimarySource {+prov:hadPrimarySource !prov:component}
+-   hadUsage {+prov:hadUsage !prov:component}
+-   qualifiedDerivation {+prov:qualifiedDerivation !prov:component}
+-   qualifiedInfluence {+prov:qualifiedInfluence !prov:component}
+-   qualifiedPrimarySource {+prov:qualifiedPrimarySource !prov:component}
+-   qualifiedQuotation {+prov:qualifiedQuotation !prov:component}
+-   qualifiedRevision {+prov:qualifiedRevision !prov:component}
+-   wasDerivedFrom {+prov:wasDerivedFrom !prov:component}
+-   wasQuotedFrom {+prov:wasQuotedFrom !prov:component}
+-   wasRevisionOf {+prov:wasRevisionOf !prov:component}

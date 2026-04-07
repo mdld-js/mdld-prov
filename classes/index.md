@@ -1,5 +1,7 @@
 [mdp] <https://mdld.js.org/prov/>
 [owl] <http://www.w3.org/2002/07/owl#>
+[dm] <http://www.w3.org/TR/2013/REC-prov-dm-20130430/#>
+[n] <http://www.w3.org/TR/2013/REC-prov-n-20130430/#>
 
 
 This list is grounded in original ontology in Turtle format [../prov-o.ttl] {=nih:sha-256-128;cf1acd21933033f75b215e665722ed13;1 .prov:Entity prov:atLocation}.
@@ -12,11 +14,13 @@ All [owl:Classes] {+owl:Class ?sh:targetClass} present is the system are validat
 
 ====
 
-## Agent {=prov:Agent label mdp:listed}
+## Agent {=prov:Agent .Class label mdp:listed mdp:expanded}
 
 > An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. {prov:definition}
 
-Has 3 sub-classes: [Organization] {+prov:Organization !subClassOf}, [Person] {+prov:Person !subClassOf} and [SoftwareAgent] {+prov:SoftwareAgent !subClassOf mdp:listed}.
+**Disjoint with:** [InstantaneousEvent] {+prov:InstantaneousEvent !owl:disjointWith}
+
+Has 3 sub-classes: **Organization** {+prov:Organization !subClassOf}, **Person** {+prov:Person !subClassOf} and **SoftwareAgent** {+prov:SoftwareAgent !subClassOf mdp:listed}.
 
 ## Person {=prov:Person .Class label mdp:listed}
 
@@ -33,6 +37,8 @@ Has 3 sub-classes: [Organization] {+prov:Organization !subClassOf}, [Person] {+p
 ## Entity {=prov:Entity .Class label mdp:listed}
 
 > An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. {prov:definition}
+
+**Disjoint with:** [InstantaneousEvent] {+prov:InstantaneousEvent ?owl:disjointWith}
 
 Has 3 sub-classes: [Collection] {+prov:Collection !subClassOf}, [Plan] {+prov:Plan !subClassOf} and [Bundle] {+prov:Bundle !subClassOf}.
 
@@ -64,11 +70,11 @@ A prov:Bundle is a named set of provenance descriptions, which may itself have p
 
 ***
 
-## Activity {=prov:Activity label mdp:listed}
+## Activity {=prov:Activity .Class label mdp:listed}
 
 > An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities. {prov:definition}
 
-> An activity is not an entity. This distinction is similar to the distinction between 'continuant' and 'occurrent' in logic. {comment}
+> An activity is not an entity. This distinction is similar to the distinction between 'continuant' and 'occurrent' in logic. {prov:comment}
 
 ***
 

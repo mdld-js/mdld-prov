@@ -4,29 +4,29 @@
 
 ![](./component3.png)
 
-8 classes: {!prov:component}
+8 classes: 
 
--   Agent {=prov:Agent}
--   Association {=prov:Association}
--   Attribution {=prov:Attribution}
--   Delegation {=prov:Delegation}
--   Organization {=prov:Organization}
--   Person {=prov:Person}
--   Plan {=prov:Plan}
--   Role {=prov:Role}
--   SoftwareAgent {=prov:SoftwareAgent}
+-   Agent {+prov:Agent !prov:component}
+-   Association {+prov:Association !prov:component}
+-   Attribution {+prov:Attribution !prov:component}
+-   Delegation {+prov:Delegation !prov:component}
+-   Organization {+prov:Organization !prov:component}
+-   Person {+prov:Person !prov:component}
+-   Plan {+prov:Plan !prov:component}
+-   Role {+prov:Role !prov:component}
+-   SoftwareAgent {+prov:SoftwareAgent !prov:component}
 
-9 properties: {!prov:component}
+9 properties: 
 
--   actedOnBehalfOf {=prov:actedOnBehalfOf}
--   hadPlan {=prov:hadPlan}
--   hadRole {=prov:hadRole}
--   influenced {=prov:influenced}
--   qualifiedAssociation {=prov:qualifiedAssociation}
--   qualifiedAttribution {=prov:qualifiedAttribution}
--   qualifiedDelegation {=prov:qualifiedDelegation}
--   wasAssociatedWith {=prov:wasAssociatedWith}
--   wasAttributedTo {=prov:wasAttributedTo}
--   wasInfluencedBy {=prov:wasInfluencedBy}
+-   actedOnBehalfOf {+prov:actedOnBehalfOf !prov:component}
+-   hadPlan {+prov:hadPlan !prov:component}
+-   hadRole {+prov:hadRole !prov:component}
+-   influenced {+prov:influenced !prov:component}
+-   qualifiedAssociation {+prov:qualifiedAssociation !prov:component}
+-   qualifiedAttribution {+prov:qualifiedAttribution !prov:component}
+-   qualifiedDelegation {+prov:qualifiedDelegation !prov:component}
+-   wasAssociatedWith {+prov:wasAssociatedWith !prov:component}
+-   wasAttributedTo {+prov:wasAttributedTo !prov:component}
+-   wasInfluencedBy {+prov:wasInfluencedBy !prov:component}
 
 ![](./Component3b.png)

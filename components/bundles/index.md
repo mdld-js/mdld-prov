@@ -6,5 +6,5 @@ The fourth component of PROV-DM is concerned with bundles, a mechanism to suppor
 
 ![](./component4.png)
 
-includes: {!prov:component}
-- Bundle {=prov:Bundle}
+includes: 
+- Bundle {+prov:Bundle !prov:component}

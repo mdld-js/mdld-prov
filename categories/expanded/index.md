@@ -12,15 +12,15 @@ The first category extends the Starting Point terms with subclasses, subproperti
 
 ### 3 Sub-classes of Agent
 
-Agent types: {!prov:category}
+Agent types: 
 
-* Person {=prov:Person}
+* Person {+prov:Person !prov:category}
 
-* Organization {=prov:Organization}
+* Organization {+prov:Organization !prov:category}
 
-* SoftwareAgent {=prov:SoftwareAgent}
+* SoftwareAgent {+prov:SoftwareAgent !prov:category}
 
-### 3 Sub-classes of Entity
+### 3 Sub-classes of Entity 
 
 A **prov:Collection** {+prov:Collection !prov:category} is an Entity that provides a structure (e.g. set, list, etc.) to some constituents (which are themselves Entities). The **prov:Collection** class can be used to express the provenance of the collection itself: e.g. who maintained the collection, which members it contained as it evolved, and how it was assembled. The **prov:hadMember** {+prov:hadMember !prov:category} property is used to assert membership in a collection. **prov:EmptyCollection** {+prov:EmptyCollection !prov:category} is a Collection with no members.
 
