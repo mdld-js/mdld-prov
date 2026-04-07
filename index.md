@@ -14,10 +14,6 @@
 
 [6 components](./components/index.md)
 
-## Classes
+## Examples
 
-[33 Classes](./classes/index.md)
-
-## Properties
-
-[50 Properties](./properties/index.md)
+[11 examples](./examples/index.md)

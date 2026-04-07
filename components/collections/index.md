@@ -6,8 +6,18 @@ The sixth component of PROV-DM is concerned with the notion of collections. A co
 
 ![](./component6.png)
 
-includes:
+## Collection {=prov:Collection .Class label}
 
-- Collection {+prov:Collection !prov:component}
-- EmptyCollection {+prov:EmptyCollection !prov:component}
-- hadMember {+prov:hadMember !prov:component}
+Sub-class of [Entity] {+prov:Entity ?subClassOf}
+
+> A collection is an entity that provides a structure to some constituents, which are themselves entities. These constituents are said to be member of the collections. {prov:definition @en}
+
+The prov:Collection [entity] {+prov:Entity ?subClassOf} class can be used to express the provenance of the collection itself: e.g. who maintained the collection, which members it contained as it evolved, and how it was assembled. The prov:hadMember property is used to assert membership in a collection.
+
+Has a subclass - **Empty Collection** {=prov:EmptyCollection .Class label !subClassOf} - *An empty collection is a collection without members.* {prov:definition @en}
+
+## hadMember {=prov:hadMember .owl:ObjectProperty label mdp:listed}
+
+Connects a [Collection] {+prov:Collection ?domain ?prov:sharesDefinitionWith} to its [member] {+prov:Entity ?range} with a relation that is a sub-property of [wasInfluencedBy] {+prov:wasInfluencedBy ?subPropertyOf}.
+
+Inverse: [wasMemberOf] {prov:inverse}

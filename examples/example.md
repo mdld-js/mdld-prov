@@ -17,10 +17,7 @@ Created by [Derek] {+ex:derek ?prov:wasAttributedTo} based on [aggregatedByRegio
 
 ### Aggregation {=ex:aggregationActivity .prov:Activity}
 
-[2011-07-14T02:02:02Z] {prov:endedAtTime ^^xsd:dateTime}
-[2011-07-14T01:01:01Z] {prov:startedAtTime ^^xsd:dateTime}
-
-Done by [Derek] {+ex:derek ?prov:wasAssociatedWith} using [Crime data] {+ex:crimeData ?prov:used} and the [National Regions List] {+ex:nationalRegionsList ?prov:used} to create the report.
+Done by [Derek] {+ex:derek ?prov:wasAssociatedWith} using [Crime data] {+ex:crimeData ?prov:used} and the [National Regions List] {+ex:nationalRegionsList ?prov:used} to create the report from [2011-07-14T02:02:02Z] {prov:endedAtTime ^^xsd:dateTime} till [2011-07-14T01:01:01Z] {prov:startedAtTime ^^xsd:dateTime}.
 
 ### Illustration {=ex:illustrationActivity .prov:Activity}
 
